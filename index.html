@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ultimate Password Generator</h1>
+        <div class="password" id="password">Press Enter or click the button to generate a password</div>
+        <div class="controls">
+            <label><input type="checkbox" id="uppercase"> Include Uppercase Letters</label>
+            <label><input type="checkbox" id="lowercase"> Include Lowercase Letters</label>
+            <label><input type="checkbox" id="numbers"> Include Numbers</label>
+            <label><input type="checkbox" id="symbols"> Include Special Symbols</label>
+            <label>Password Strength: <input type="range" id="strength" min="1" max="10" value="5"></label>
+            <label>Password Length: <input type="range" id="length" min="4" max="20" value="12"></label>
+            <button onclick="generatePassword()">Generate Password</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
